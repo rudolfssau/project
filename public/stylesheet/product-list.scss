@@ -1,0 +1,115 @@
+$zero: 0px;
+
+/*Styling reset for whole site*/
+* {
+  border: $zero;
+  margin: $zero;
+  padding: $zero;
+}
+
+/*Whole body styling*/
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Styling for header*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid lightgrey;
+}
+header > h1 {
+  padding: 20px;
+}
+
+/*Styling for header buttons "ADD", "MASS DELETE"*/
+
+.add-delete-button {
+  display: flex;
+  list-style: none;
+}
+#add-product-btn {
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  background-color: green;
+  cursor: pointer;
+}
+.add-product-button-wrapper {
+  padding: 20px 5px 20px 20px;
+}
+#delete-product-btn {
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  background-color: red;
+  cursor: pointer;
+}
+.delete-product-button-wrapper {
+  padding: 20px 20px 20px 0px;
+}
+
+/*Content styling*/
+
+.content {
+  flex: 1 0 auto;
+  height: 85vh;
+}
+/*Styling for table*/
+table {
+  margin: auto;
+  width: 100vh;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+td {
+  width: 33.33%;
+}
+#table-data {
+  padding: 3px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+#table-data:last-child {
+  padding-bottom: 40px;
+}
+#table-row {
+  margin: 10px;
+  border: 1px solid black;
+  display: flex;
+  width: 20%;
+  flex-flow: row wrap;
+  align-items: center;
+}
+#table-check {
+  padding: 10px;
+}
+table {
+  display: flex;
+  margin-left: 6.5%;
+  flex-flow: row wrap;
+  width: 100%;
+  height: auto;
+}
+
+/*Styling for footer*/
+
+footer {
+  flex-shrink: 0;
+  padding: 20px;
+  border-top: 2px solid lightgrey;
+  text-align: center;
+}
+footer > h3 {
+  font-weight: lighter;
+}

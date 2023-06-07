@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./test/src/frontend/post.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rudolfssau/project.git"
+  },
+  "author": "Rudolfs Saukums",
+  "license": "ISC",
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.2.47",
+    "axios": "^1.3.6",
+    "vue": "^3.2.47",
+    "vue-loader": "^17.0.1",
+    "webpack": "^5.80.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.0.2"
+  }
+}
