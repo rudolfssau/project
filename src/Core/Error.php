@@ -6,7 +6,7 @@ use Main\Config;
 
 class Error
 {
-    public static function errorHandler($level, $message, $file, $line)
+    public static function errorHandler($level, $message, $file, $line): void
     {
         if (error_reporting() !== 0) {
             throw new \ErrorException($message, 0 , $level, $file, $line);

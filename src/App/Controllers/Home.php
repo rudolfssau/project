@@ -8,11 +8,11 @@ use Main\App\Models\Post;
 
 class Home extends Controller
 {
-    public function showAction()
+    public function showAction(): void
     {
         View::render('Home/index.php');
     }
-    public function deleteAction()
+    public function deleteAction(): void
     {
         $post = new Post();
         $request_body = file_get_contents('php://input');
@@ -21,5 +21,12 @@ class Home extends Controller
         $id = implode(',', $data);
         $delete = $post->delete("DELETE FROM info WHERE id IN($id)");
         $delete->execute();
+    }
+    public function testAction(): void
+    {
+        $post = new Router();
+        $post->add('/home/delete', ['controller' => 'Home', 'action' => 'delete']);
+        $postRoute = $post->returnVal();
+        print_r($postRoute);
     }
 }

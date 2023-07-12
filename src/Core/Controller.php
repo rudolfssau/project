@@ -12,10 +12,11 @@ abstract class Controller
      * @var array
      */
     protected array $router_params = [];
+
     /**
-     * @param $router_params
+     * @param array $router_params
      */
-    public function __construct($router_params)
+    public function __construct(array $router_params)
     {
         $this->router_params = $router_params;
     }

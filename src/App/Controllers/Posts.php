@@ -10,11 +10,11 @@ use Main\Core\View;
 
 class Posts extends Controller
 {
-    public function indexAction()
+    public function indexAction(): void
     {
         View::render("Posts/index.php");
     }
-    public function insertAction()
+    public function insertAction(): void
     {
         $post = new Post();
         $sku = $_POST['sku'];

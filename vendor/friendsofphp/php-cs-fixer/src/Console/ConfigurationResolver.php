@@ -23,7 +23,6 @@ use PhpCsFixer\Cache\NullCacheManager;
 use PhpCsFixer\Cache\Signature;
 use PhpCsFixer\ConfigInterface;
 use PhpCsFixer\ConfigurationException\InvalidConfigurationException;
-use PhpCsFixer\Console\Command\HelpCommand;
 use PhpCsFixer\Console\Report\FixReport\ReporterFactory;
 use PhpCsFixer\Console\Report\FixReport\ReporterInterface;
 use PhpCsFixer\Differ\DifferInterface;
@@ -309,9 +308,10 @@ final class ConfigurationResolver
                 $absolutePath = $filesystem->isAbsolutePath($path)
                     ? $path
                     : $this->cwd.\DIRECTORY_SEPARATOR.$path;
+                $absolutePath = \dirname($absolutePath);
             }
 
-            $this->directory = new Directory(\dirname($absolutePath));
+            $this->directory = new Directory($absolutePath);
         }
 
         return $this->directory;
@@ -343,7 +343,7 @@ final class ConfigurationResolver
                 );
 
                 if (\count($riskyFixers) > 0) {
-                    throw new InvalidConfigurationException(sprintf('The rules contain risky fixers ("%s"), but they are not allowed to run. Perhaps you forget to use --allow-risky=yes option?', implode('", "', $riskyFixers)));
+                    throw new InvalidConfigurationException(sprintf('The rules contain risky fixers (%s), but they are not allowed to run. Perhaps you forget to use --allow-risky=yes option?', Utils::naturalLanguageJoin($riskyFixers)));
                 }
             }
         }
@@ -417,9 +417,9 @@ final class ConfigurationResolver
                     $progressType = $this->getConfig()->getHideProgress() ? 'none' : 'dots';
                 } elseif (!\in_array($progressType, $progressTypes, true)) {
                     throw new InvalidConfigurationException(sprintf(
-                        'The progress type "%s" is not defined, supported are "%s".',
+                        'The progress type "%s" is not defined, supported are %s.',
                         $progressType,
-                        implode('", "', $progressTypes)
+                        Utils::naturalLanguageJoin($progressTypes)
                     ));
                 }
 
@@ -446,7 +446,7 @@ final class ConfigurationResolver
                 $formats = $reporterFactory->getFormats();
                 sort($formats);
 
-                throw new InvalidConfigurationException(sprintf('The format "%s" is not defined, supported are "%s".', $format, implode('", "', $formats)));
+                throw new InvalidConfigurationException(sprintf('The format "%s" is not defined, supported are %s.', $format, Utils::naturalLanguageJoin($formats)));
             }
         }
 
@@ -775,7 +775,7 @@ final class ConfigurationResolver
                         '"%s" is renamed (did you mean "%s"?%s), ',
                         $unknownFixer,
                         $renamedRules[$unknownFixer]['new_name'],
-                        isset($renamedRules[$unknownFixer]['config']) ? ' (note: use configuration "'.HelpCommand::toString($renamedRules[$unknownFixer]['config']).'")' : ''
+                        isset($renamedRules[$unknownFixer]['config']) ? ' (note: use configuration "'.Utils::toString($renamedRules[$unknownFixer]['config']).'")' : ''
                     );
                 } else { // Go to normal matcher if it is not a renamed rule
                     $matcher = new WordMatcher($availableFixers);
@@ -831,9 +831,9 @@ final class ConfigurationResolver
             true
         )) {
             throw new InvalidConfigurationException(sprintf(
-                'The path-mode "%s" is not defined, supported are "%s".',
+                'The path-mode "%s" is not defined, supported are %s.',
                 $this->options['path-mode'],
-                implode('", "', $modes)
+                Utils::naturalLanguageJoin($modes)
             ));
         }
 

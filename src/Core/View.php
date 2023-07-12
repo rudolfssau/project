@@ -4,7 +4,7 @@ namespace Main\Core;
 
 class View
 {
-    public static function render($view, $args = [])
+    public static function render(string $view, array $args = []): void
     {
         extract($args, EXTR_SKIP);
         $file = "../src/App/Views/$view";

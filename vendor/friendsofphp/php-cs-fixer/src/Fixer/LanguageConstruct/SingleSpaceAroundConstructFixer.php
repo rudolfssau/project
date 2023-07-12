@@ -46,7 +46,7 @@ final class SingleSpaceAroundConstructFixer extends AbstractFixer implements Con
      * @var array<string, null|int>
      */
     private static array $tokenMapPrecededByASingleSpace = [
-        // for now, only one case - but we are ready to extend it, when we learn about new cases to cover
+        'as' => T_AS,
         'use_lambda' => CT::T_USE_LAMBDA,
     ];
 
@@ -132,9 +132,6 @@ final class SingleSpaceAroundConstructFixer extends AbstractFixer implements Con
      */
     private array $fixTokenMapPrecededByASingleSpace = [];
 
-    /**
-     * {@inheritdoc}
-     */
     public function configure(array $configuration): void
     {
         parent::configure($configuration);
@@ -188,9 +185,6 @@ final class SingleSpaceAroundConstructFixer extends AbstractFixer implements Con
         }
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getDefinition(): FixerDefinitionInterface
     {
         return new FixerDefinition(
@@ -269,9 +263,6 @@ yield  from  baz();
         return 36;
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function isCandidate(Tokens $tokens): bool
     {
         $tokenKinds = array_merge(
@@ -283,9 +274,6 @@ yield  from  baz();
         return $tokens->isAnyTokenKindsFound($tokenKinds) && !$tokens->hasAlternativeSyntax();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function applyFix(\SplFileInfo $file, Tokens $tokens): void
     {
         $tokenKindsContainASingleSpace = array_values($this->fixTokenMapContainASingleSpace);
@@ -332,7 +320,7 @@ yield  from  baz();
 
             if (
                 $token->isGivenKind(T_STATIC)
-                && !$tokens[$tokens->getNextMeaningfulToken($index)]->isGivenKind([T_FUNCTION, T_VARIABLE])
+                && !$tokens[$tokens->getNextMeaningfulToken($index)]->isGivenKind([T_FN, T_FUNCTION, T_NS_SEPARATOR, T_STRING, T_VARIABLE, CT::T_ARRAY_TYPEHINT, CT::T_NULLABLE_TYPE])
             ) {
                 continue;
             }

@@ -28,6 +28,7 @@ use PhpCsFixer\Tokenizer\CT;
 use PhpCsFixer\Tokenizer\Token;
 use PhpCsFixer\Tokenizer\Tokens;
 use PhpCsFixer\Tokenizer\TokensAnalyzer;
+use PhpCsFixer\Utils;
 use Symfony\Component\OptionsResolver\Exception\InvalidOptionsException;
 
 /**
@@ -82,9 +83,6 @@ final class OrderedImportsFixer extends AbstractFixer implements ConfigurableFix
      */
     private const SUPPORTED_SORT_ALGORITHMS = [self::SORT_ALPHA, self::SORT_LENGTH, self::SORT_NONE];
 
-    /**
-     * {@inheritdoc}
-     */
     public function getDefinition(): FixerDefinitionInterface
     {
         return new FixerDefinition(
@@ -180,17 +178,11 @@ use Bar;
         return -30;
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function isCandidate(Tokens $tokens): bool
     {
         return $tokens->isTokenKindFound(T_USE);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function applyFix(\SplFileInfo $file, Tokens $tokens): void
     {
         $tokensAnalyzer = new TokensAnalyzer($tokens);
@@ -243,9 +235,6 @@ use Bar;
         }
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function createConfigurationDefinition(): FixerConfigurationResolverInterface
     {
         $supportedSortTypes = self::SUPPORTED_SORT_TYPES;
@@ -262,18 +251,18 @@ use Bar;
                         $missing = array_diff($supportedSortTypes, $value);
                         if (\count($missing) > 0) {
                             throw new InvalidOptionsException(sprintf(
-                                'Missing sort %s "%s".',
+                                'Missing sort %s %s.',
                                 1 === \count($missing) ? 'type' : 'types',
-                                implode('", "', $missing)
+                                Utils::naturalLanguageJoin($missing)
                             ));
                         }
 
                         $unknown = array_diff($value, $supportedSortTypes);
                         if (\count($unknown) > 0) {
                             throw new InvalidOptionsException(sprintf(
-                                'Unknown sort %s "%s".',
+                                'Unknown sort %s %s.',
                                 1 === \count($unknown) ? 'type' : 'types',
-                                implode('", "', $unknown)
+                                Utils::naturalLanguageJoin($unknown)
                             ));
                         }
                     }

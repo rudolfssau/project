@@ -16,7 +16,8 @@
       "ext-pdo": "*"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "dev-master"
+        "friendsofphp/php-cs-fixer": "dev-master",
+        "phpunit/phpunit": "10.2"
     },
     "scripts": {
         "php-cs-fixer": "php-cs-fixer fix src/App/Controllers/Check.php"

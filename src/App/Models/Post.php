@@ -7,7 +7,7 @@ use \PDO;
 
 class Post
 {
-    public $pdo;
+    public string|PDO $pdo;
     public function __construct()
     {
         try {

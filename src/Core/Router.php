@@ -9,17 +9,20 @@ class Router
      */
     protected array $routes = [];
     protected array $params = [];
-    public function add($route, $params = [])
+
+    public function add(string $route, array $params = []): void
     {
         $route = preg_replace('/\//', '\\/', $route);
         $route = preg_replace('/\{([a-z]+)\}/', '(?P<\1>[a-z]+)', $route);
         $route = '/^' . $route . '$/i';
         $this->routes[$route] = $params;
     }
+
     /**
-     * @param $url
+     * @param string $url
+     * @return bool
      */
-    public function match($url)
+    public function match(string $url): bool
     {
         foreach ($this->routes as $route => $params) {
             if (preg_match($route, $url, $matches)) {
@@ -34,7 +37,7 @@ class Router
         }
         return false;
     }
-    public function dispatch($url)
+    public function dispatch(string $url): void
     {
         if ($this->match($url)) {
             $controller = $this->params['controller'];
@@ -56,11 +59,11 @@ class Router
             throw new Exception("No result found", 404);
         }
     }
-    public function convertToStudlyCaps($string)
+    public function convertToStudlyCaps(string $string): array|string
     {
         return str_replace(' ', '', ucwords(str_replace('-', ' ', $string)));
     }
-    public function convertToCamelCase($string)
+    public function convertToCamelCase(string $string): string
     {
         return lcfirst($this->convertToStudlyCaps($string));
     }

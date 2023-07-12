@@ -39,9 +39,6 @@ final class NoSuperfluousPhpdocTagsFixer extends AbstractFixer implements Config
         'allows_null' => true,
     ];
 
-    /**
-     * {@inheritdoc}
-     */
     public function getDefinition(): FixerDefinitionInterface
     {
         return new FixerDefinition(
@@ -100,17 +97,11 @@ class Foo {
         return 6;
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function isCandidate(Tokens $tokens): bool
     {
         return $tokens->isTokenKindFound(T_DOC_COMMENT);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function applyFix(\SplFileInfo $file, Tokens $tokens): void
     {
         $tokensAnalyzer = new TokensAnalyzer($tokens);
@@ -187,9 +178,6 @@ class Foo {
         }
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function createConfigurationDefinition(): FixerConfigurationResolverInterface
     {
         return new FixerConfigurationResolver([
@@ -519,11 +507,11 @@ class Foo {
         array $symbolShortNames
     ): bool {
         if ('param' === $annotation->getTag()->getName()) {
-            $regex = '{@param(?:\s+'.TypeExpression::REGEX_TYPES.')?(?:\s+(?:\&\s*)?(?:\.{3}\s*)?\$\S+)?(?:\s+(?<description>(?!\*+\/)\S+))?}sx';
+            $regex = '{@param(?:\s+'.TypeExpression::REGEX_TYPES.')?(?:\s+(?:\&\s*)?(?:\.{3}\s*)?\$\S+)?(?:\s+(?<description>(?!\*+\/)\S+))?}s';
         } elseif ('var' === $annotation->getTag()->getName()) {
-            $regex = '{@var(?:\s+'.TypeExpression::REGEX_TYPES.')?(?:\s+\$\S+)?(?:\s+(?<description>(?!\*\/)\S+))?}sx';
+            $regex = '{@var(?:\s+'.TypeExpression::REGEX_TYPES.')?(?:\s+\$\S+)?(?:\s+(?<description>(?!\*\/)\S+))?}s';
         } else {
-            $regex = '{@return(?:\s+'.TypeExpression::REGEX_TYPES.')?(?:\s+(?<description>(?!\*\/)\S+))?}sx';
+            $regex = '{@return(?:\s+'.TypeExpression::REGEX_TYPES.')?(?:\s+(?<description>(?!\*\/)\S+))?}s';
         }
 
         if (1 !== Preg::match($regex, $annotation->getContent(), $matches)) {

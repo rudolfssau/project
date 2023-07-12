@@ -7,7 +7,7 @@ use Main\Core\Controller;
 
 class Get extends Controller
 {
-    public function returnJsonAction()
+    public function returnJsonAction(): void
     {
         $data = [];
         $post = new Post();

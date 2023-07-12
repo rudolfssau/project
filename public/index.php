@@ -13,6 +13,7 @@ set_exception_handler('Main\Core\Error::exceptionHandler');
  */
 $router = new Router();
 $router->add('/', ['controller' => 'Home', 'action' => 'show']);
+$router->add('/test', ['controller' => 'Home', 'action' => 'test']);
 $router->add('/home/delete', ['controller' => 'Home', 'action' => 'delete']);
 $router->add('/check/check', ['controller' => 'Check', 'action' => 'check']);
 $router->add('/favicon.ico', ['controller' => 'Favicon', 'action' => 'main']);

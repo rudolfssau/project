@@ -7,7 +7,7 @@ use Main\Core\Controller;
 
 class Check extends Controller
 {
-    public function checkAction()
+    public function checkAction(): void
     {
         $data = [];
         $post = new Post();
