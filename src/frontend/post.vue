@@ -45,18 +45,18 @@ export default {
     };
   },
   methods: {
-    errorCounter: function () {
-      axios.get('/check/check')
-          .then((response) => {
-            for (const data of response.data) {
-              if (this.sku === data.sku) {
-                this.isDuplicate = true;
-              } else {
-                this.isDuplicate = false;
-              }
-            }
-          });
-    },
+    // errorCounter: function () {
+    //   axios.get('/check/check')
+    //       .then((response) => {
+    //         for (const data of response.data) {
+    //           if (this.sku === data.sku) {
+    //             this.isDuplicate = true;
+    //           } else {
+    //             this.isDuplicate = false;
+    //           }
+    //         }
+    //       });
+    // },
     checkForNum: function () {
       for(let field in this.$data.fields) {
         this.$data.fields[field].check = false;
@@ -85,7 +85,12 @@ export default {
         e.preventDefault();
       }
       else {
-        document.forms.product_form.submit();
+        axios.post('/posts/insert', document.forms.product_form).then((res) => {
+          console.log(res);
+        })
+            .catch((err) => {
+              console.log(err);
+            });
       }
     }
   }

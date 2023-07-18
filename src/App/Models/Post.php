@@ -8,28 +8,27 @@ use \PDO;
 class Post
 {
     public string|PDO $pdo;
-    public function __construct()
+    protected static $connected = false;
+    protected static function connect(): PDO|bool
     {
-        try {
-            $this->pdo = new \PDO('mysql:host='.Config::DB_HOST.';port=3306;dbname='.Config::DB_NAME.';charset=utf8mb4', Config::DB_USERNAME, Config::DB_PASSWORD);
-            $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            return $this->pdo;
-        } catch (\PDOException $ex) {
-            $this->pdo = $ex->getMessage();
+        if (!self::$connected) {
+            $connection = new \PDO('mysql:host='.Config::DB_HOST.';port=3306;dbname='.Config::DB_NAME.';charset=utf8mb4', Config::DB_USERNAME, Config::DB_PASSWORD);
+            self::$connected = $connection;
         }
+        return self::$connected;
     }
-    public function query(string $sql, array $params = []): ?array
+    public static function query(string $sql, array $params = []): ?array
     {
-        $statement = $this->pdo->prepare($sql);
+        $statement = Post::connect()->prepare($sql);
         $statement->execute($params);
         return $statement->fetchall(PDO::FETCH_ASSOC) ?: null;
     }
-    public function insert(string $sql): bool|\PDOStatement
+    public static function insert(string $sql): bool|\PDOStatement
     {
-        return $this->pdo->prepare($sql);
+        return Post::connect()->prepare($sql);
     }
-    public function delete(string $sql)
+    public static function delete(string $sql): bool|\PDOStatement
     {
-        return $this->pdo->prepare($sql);
+        return Post::connect()->prepare($sql);
     }
 }

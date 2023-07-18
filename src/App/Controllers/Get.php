@@ -7,11 +7,14 @@ use Main\Core\Controller;
 
 class Get extends Controller
 {
-    public function returnJsonAction(): void
+    public function returnJsonAction()
     {
         $data = [];
-        $post = new Post();
-        $values = $post->query('SELECT * FROM info');
+        try {
+            $values = Post::query('SELECT * FROM info');
+        } catch (\PDOException) {
+            throw new \PDOException("Error with database connection");
+        }
         if (!$values) {
             return;
         } else {
