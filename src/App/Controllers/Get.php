@@ -2,7 +2,7 @@
 
 namespace Main\App\Controllers;
 
-use Main\App\Models\Post;
+use Main\App\Models\Product;
 use Main\Core\Controller;
 
 class Get extends Controller
@@ -10,11 +10,7 @@ class Get extends Controller
     public function returnJsonAction()
     {
         $data = [];
-        try {
-            $values = Post::query('SELECT * FROM info');
-        } catch (\PDOException) {
-            throw new \PDOException("Error with database connection");
-        }
+        $values = Product::query('SELECT * FROM info');
         if (!$values) {
             return;
         } else {

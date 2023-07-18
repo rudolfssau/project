@@ -11,9 +11,6 @@ export default {
     }
   },
   methods: {
-    // getExceptions: function () {
-    //   axios.get(/)
-    // }
     getAllUsers: function () {
       axios.get('/get/returnJson')
           .then((response) => {

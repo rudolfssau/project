@@ -5,7 +5,7 @@ namespace Main\App\Models;
 use Main\Config;
 use \PDO;
 
-class Post
+class Product
 {
     public string|PDO $pdo;
     protected static $connected = false;
@@ -19,16 +19,16 @@ class Post
     }
     public static function query(string $sql, array $params = []): ?array
     {
-        $statement = Post::connect()->prepare($sql);
+        $statement = Product::connect()->prepare($sql);
         $statement->execute($params);
         return $statement->fetchall(PDO::FETCH_ASSOC) ?: null;
     }
     public static function insert(string $sql): bool|\PDOStatement
     {
-        return Post::connect()->prepare($sql);
+        return Product::connect()->prepare($sql);
     }
     public static function delete(string $sql): bool|\PDOStatement
     {
-        return Post::connect()->prepare($sql);
+        return Product::connect()->prepare($sql);
     }
 }

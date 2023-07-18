@@ -45,18 +45,6 @@ export default {
     };
   },
   methods: {
-    // errorCounter: function () {
-    //   axios.get('/check/check')
-    //       .then((response) => {
-    //         for (const data of response.data) {
-    //           if (this.sku === data.sku) {
-    //             this.isDuplicate = true;
-    //           } else {
-    //             this.isDuplicate = false;
-    //           }
-    //         }
-    //       });
-    // },
     checkForNum: function () {
       for(let field in this.$data.fields) {
         this.$data.fields[field].check = false;
@@ -77,20 +65,14 @@ export default {
       if (isNaN(Number(this.price)) || this.notNumeric>0) {
         alert("Please, provide the data of indicated type");
         e.preventDefault();
-      } else if (this.sku.length === 0 || this.name.length === 0 || this.price.length === 0 || this.fields[this.select].input.length === 0 || this.fields[this.select].input_second.length === 0 || this.fields[this.select].input_third.length === 0) {
-        alert("Please, fill out all of the required fields");
-        e.preventDefault();
-      } else if (this.isDuplicate === true) {
-        alert("SKU duplicate entry");
-        e.preventDefault();
       }
       else {
         axios.post('/posts/insert', document.forms.product_form).then((res) => {
           console.log(res);
-        })
-            .catch((err) => {
-              console.log(err);
-            });
+          // window.location = '/'
+        }).catch((err) => {
+          alert(err.response.data.message);
+        });
       }
     }
   }

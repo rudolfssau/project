@@ -4,6 +4,7 @@ const { VueLoaderPlugin } = require("vue-loader");
 
 
 module.exports = {
+    mode: 'production',
     entry: {
         post: "./src/frontend/post.js",
         view: "./src/frontend/view.js",

@@ -4,7 +4,7 @@ namespace Main\App\Controllers;
 
 use Main\Core\Controller;
 use Main\Core\View;
-use Main\App\Models\Post;
+use Main\App\Models\Product;
 
 class Home extends Controller
 {
@@ -18,7 +18,7 @@ class Home extends Controller
         $data = json_decode($request_body, true);
         $data = $data['id'];
         $id = implode(',', $data);
-        $delete = Post::delete("DELETE FROM info WHERE id IN($id)");
+        $delete = Product::delete("DELETE FROM info WHERE id IN($id)");
         $delete->execute();
     }
 }

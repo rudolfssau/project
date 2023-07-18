@@ -16,3 +16,771 @@ Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(37): PDOStatem
 #5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
 #6 {main} 
 Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 37
+[18-Jul-2023 11:13:43 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '23' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(33): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 33
+[18-Jul-2023 11:19:57 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '23' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(33): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 33
+[18-Jul-2023 11:21:47 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '23' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(33): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 33
+[18-Jul-2023 11:22:09 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '23' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(33): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 33
+[18-Jul-2023 11:25:53 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '23' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(34): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 34
+[18-Jul-2023 11:28:37 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '23' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(34): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 34
+[18-Jul-2023 11:28:40 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '23' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(34): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 34
+[18-Jul-2023 11:29:49 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '23' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(34): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 34
+[18-Jul-2023 11:30:08 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '23' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(34): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 34
+[18-Jul-2023 11:30:22 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '23' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(34): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 34
+[18-Jul-2023 11:49:15 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(34): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 34
+[18-Jul-2023 11:55:37 UTC] Uncaught exception: 'PDOException' with message '' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 34
+[18-Jul-2023 11:56:39 UTC] Uncaught exception: 'PDOException' with message 'Please fill fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 34
+[18-Jul-2023 11:56:52 UTC] Uncaught exception: 'PDOException' with message 'Please fill fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 34
+[18-Jul-2023 12:06:28 UTC] Uncaught exception: 'PDOException' with message 'Please fill fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 34
+[18-Jul-2023 12:06:32 UTC] Uncaught exception: 'PDOException' with message 'Please fill fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 34
+[18-Jul-2023 12:14:34 UTC] Uncaught exception: 'ParseError' with message 'syntax error, unexpected token ")"' 
+Stack trace: #0 /var/www/project/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}('/var/www/projec...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Main\\App\\Contro...')
+#2 /var/www/project/src/Core/Router.php(46): class_exists('Main\\App\\Contro...')
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/addproducts')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 34
+[18-Jul-2023 12:14:43 UTC] Uncaught exception: 'ParseError' with message 'syntax error, unexpected token ")"' 
+Stack trace: #0 /var/www/project/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}('/var/www/projec...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Main\\App\\Contro...')
+#2 /var/www/project/src/Core/Router.php(46): class_exists('Main\\App\\Contro...')
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/addproducts')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 34
+[18-Jul-2023 12:15:25 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(44): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 44
+[18-Jul-2023 12:17:46 UTC] Uncaught exception: 'PDOException' with message 'Empty sku' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 37
+[18-Jul-2023 12:18:07 UTC] Uncaught exception: 'PDOException' with message 'Empty sku' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 38
+[18-Jul-2023 12:18:43 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(34): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 34
+[18-Jul-2023 12:19:05 UTC] Uncaught exception: 'PDOException' with message 'Empty sku' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 38
+[18-Jul-2023 12:22:12 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(34): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 34
+[18-Jul-2023 12:22:21 UTC] Uncaught exception: 'PDOException' with message 'Empty sku' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 39
+[18-Jul-2023 12:37:42 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(38): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 38
+[18-Jul-2023 12:38:09 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 12:38:17 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(38): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 38
+[18-Jul-2023 12:38:55 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 12:40:36 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 12:40:42 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 12:40:46 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(38): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 38
+[18-Jul-2023 12:41:36 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 12:41:39 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(38): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 38
+[18-Jul-2023 12:44:06 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 12:44:12 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(38): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 38
+[18-Jul-2023 13:49:24 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 13:49:28 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(38): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 38
+[18-Jul-2023 13:55:47 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 59
+[18-Jul-2023 13:55:58 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 59
+[18-Jul-2023 13:56:01 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(38): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 38
+[18-Jul-2023 13:56:13 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 59
+[18-Jul-2023 13:57:04 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 59
+[18-Jul-2023 13:57:31 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 13:57:43 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 13:58:30 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 13:58:43 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 13:58:53 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 13:58:59 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 13:59:04 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 13:59:11 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 13:59:16 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 13:59:49 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 14:00:20 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 14:00:50 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 14:01:14 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 60
+[18-Jul-2023 14:12:15 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 58
+[18-Jul-2023 14:12:35 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 58
+[18-Jul-2023 14:12:41 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 58
+[18-Jul-2023 14:12:46 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 58
+[18-Jul-2023 14:12:51 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 58
+[18-Jul-2023 14:13:14 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 58
+[18-Jul-2023 14:13:18 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 58
+[18-Jul-2023 14:13:37 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 58
+[18-Jul-2023 14:16:26 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 70
+[18-Jul-2023 14:24:19 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 93
+[18-Jul-2023 14:24:38 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 93
+[18-Jul-2023 14:24:58 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 93
+[18-Jul-2023 15:27:41 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 75
+[18-Jul-2023 15:27:47 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 75
+[18-Jul-2023 15:27:54 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 75
+[18-Jul-2023 15:27:57 UTC] Uncaught exception: 'TypeError' with message 'PDOStatement::execute(): Argument #1 ($params) must be of type ?array, string given' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(78): PDOStatement->execute('213')
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 78
+[18-Jul-2023 15:28:43 UTC] Uncaught exception: 'TypeError' with message 'PDOStatement::execute(): Argument #1 ($params) must be of type ?array, string given' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(78): PDOStatement->execute('213')
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 78
+[18-Jul-2023 15:29:53 UTC] Uncaught exception: 'TypeError' with message 'PDOStatement::execute(): Argument #1 ($params) must be of type ?array, string given' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(78): PDOStatement->execute('213')
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 78
+[18-Jul-2023 15:30:10 UTC] Uncaught exception: 'TypeError' with message 'PDOStatement::execute(): Argument #1 ($params) must be of type ?array, string given' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(78): PDOStatement->execute('124123')
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 78
+[18-Jul-2023 15:31:07 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 75
+[18-Jul-2023 15:31:22 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 75
+[18-Jul-2023 15:31:26 UTC] Uncaught exception: 'TypeError' with message 'PDOStatement::execute(): Argument #1 ($params) must be of type ?array, string given' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(78): PDOStatement->execute('12')
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 78
+[18-Jul-2023 15:32:19 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 75
+[18-Jul-2023 15:32:25 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 75
+[18-Jul-2023 15:32:28 UTC] Uncaught exception: 'TypeError' with message 'PDOStatement::execute(): Argument #1 ($params) must be of type ?array, string given' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(78): PDOStatement->execute('123')
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 78
+[18-Jul-2023 15:34:24 UTC] Uncaught exception: 'TypeError' with message 'PDOStatement::execute(): Argument #1 ($params) must be of type ?array, string given' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(79): PDOStatement->execute('2321')
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 79
+[18-Jul-2023 15:35:16 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 75
+[18-Jul-2023 15:35:26 UTC] Uncaught exception: 'TypeError' with message 'PDOStatement::execute(): Argument #1 ($params) must be of type ?array, string given' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(79): PDOStatement->execute('1')
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 79
+[18-Jul-2023 15:35:56 UTC] Uncaught exception: 'TypeError' with message 'PDOStatement::execute(): Argument #1 ($params) must be of type ?array, string given' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(74): PDOStatement->execute('234')
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 74
+[18-Jul-2023 15:36:11 UTC] Uncaught exception: 'TypeError' with message 'PDOStatement::execute(): Argument #1 ($params) must be of type ?array, string given' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(74): PDOStatement->execute('234')
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 74
+[18-Jul-2023 15:36:56 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '234234' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(74): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 74
+[18-Jul-2023 15:37:48 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 75
+[18-Jul-2023 15:39:21 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 75
+[18-Jul-2023 15:39:26 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 75
+[18-Jul-2023 15:39:30 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 75
+[18-Jul-2023 15:39:34 UTC] Uncaught exception: 'PDOException' with message 'Please, fill out all of the required fields' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(32): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(51): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(28): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 75

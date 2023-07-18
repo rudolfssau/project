@@ -2,7 +2,7 @@
 
 namespace Main\App\Controllers;
 
-use Main\App\Models\Post;
+use Main\App\Models\Product;
 use Main\Core\Controller;
 
 class Favicon extends Controller
