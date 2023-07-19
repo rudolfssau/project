@@ -11,7 +11,6 @@ use Main\Core\Error;
 error_reporting(E_ALL);
 set_exception_handler('Main\Core\Error::exceptionHandler');
 
-
 /**
  * Routing presets
  */
@@ -24,5 +23,5 @@ $router->add('/addproducts', ['controller' => 'Products', 'action' => 'index']);
 $router->add('/posts/insert', ['controller' => 'Products', 'action' => 'insert']);
 $router->add('/get/returnJson', ['controller' => 'Get', 'action' => 'returnJson']);
 $router->add('{controller}/{id:\d+}/{action}');
-$url = $_SERVER['REQUEST_URI'];
-$router->dispatch($url);
+
+$router->dispatch($_SERVER['REQUEST_URI']);

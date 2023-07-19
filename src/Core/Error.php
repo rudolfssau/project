@@ -2,8 +2,6 @@
 
 namespace Main\Core;
 
-use Main\Core\View;
-
 class Error
 {
     public static function exceptionHandler($exception)

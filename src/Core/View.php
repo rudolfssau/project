@@ -2,8 +2,13 @@
 
 namespace Main\Core;
 
+use Exception;
+
 class View
 {
+    /**
+     * @throws Exception
+     */
     public static function render(string $view, array $args = []): void
     {
         extract($args, EXTR_SKIP);
@@ -11,7 +16,7 @@ class View
         if (is_readable($file)) {
             require $file;
         } else {
-            echo "$file not found";
+            throw new Exception("$file not found");
         }
     }
 }

@@ -11,5 +11,4 @@ class Config
     const DB_NAME = 'products';
     const DB_USERNAME = 'root';
     const DB_PASSWORD = 'root';
-    const SHOW_ERROR = true;
 }

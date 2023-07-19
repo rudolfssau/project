@@ -2,7 +2,8 @@
 
 namespace Main\Core;
 
-use Main\Core\Error;
+use Exception;
+
 /**
  * Class Controller
  */
@@ -20,10 +21,12 @@ abstract class Controller
     {
         $this->router_params = $router_params;
     }
+
     /**
      * @param string $name
      * @param array $arguments
      * @return void
+     * @throws Exception
      */
     public function __call(string $name, array $arguments)
     {
@@ -31,7 +34,7 @@ abstract class Controller
         if (method_exists($this, $method)) {
             call_user_func_array([$this, $method], $arguments);
         } else {
-           throw new \Exception($method . " not found in controller " . get_class($this));
+           throw new Exception($method . " not found in controller " . get_class($this));
         }
     }
 }
