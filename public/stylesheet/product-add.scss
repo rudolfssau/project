@@ -121,7 +121,9 @@ header > h1 {
 
 /*Type styling*/
 
-
+div>input {
+  width: 100%;
+}
 #dvd_input_field {
   display: flex;
   align-items: center;
@@ -175,8 +177,7 @@ header > h1 {
   margin-left: 65px;
 }
 
-/*Error message styling*/
-/**/
+
 /*Styling for footer*/
 /**/
 footer {

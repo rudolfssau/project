@@ -2,12 +2,16 @@
 
 namespace Main\App\Controllers;
 
+use Exception;
 use Main\Core\Controller;
 use Main\Core\View;
 use Main\App\Models\Product;
 
 class Home extends Controller
 {
+    /**
+     * @throws Exception
+     */
     public function showAction(): void
     {
         View::render('Home/index.php');

@@ -4,7 +4,7 @@ namespace Main\Core;
 
 class Error
 {
-    public static function exceptionHandler($exception)
+    public static function exceptionHandler($exception): void
     {
         $log = dirname(__DIR__) . '/logs/' . date('Y-m-d') . '.txt';
         ini_set('error_log', $log);

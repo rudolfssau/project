@@ -184,3 +184,220 @@ Stack trace: #0 /var/www/project/src/Core/Router.php(57): Main\Core\Router->conv
 #2 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
 #3 {main} 
 Thrown in '/var/www/project/src/Core/Router.php' on line 81
+[19-Jul-2023 10:47:15 UTC] Uncaught exception: 'Error' with message 'Call to undefined method Main\Core\Router::convertToStudlyCaps()' 
+Stack trace: #0 /var/www/project/src/Core/Router.php(57): Main\Core\Router->convertLowerFirst('show')
+#1 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/')
+#2 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#3 {main} 
+Thrown in '/var/www/project/src/Core/Router.php' on line 81
+[19-Jul-2023 10:47:24 UTC] Uncaught exception: 'Exception' with message 'No result found' 
+Stack trace: #0 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/?/')
+#1 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#2 {main} 
+Thrown in '/var/www/project/src/Core/Router.php' on line 70
+[19-Jul-2023 10:47:27 UTC] Uncaught exception: 'Exception' with message 'No result found' 
+Stack trace: #0 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/?/')
+#1 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#2 {main} 
+Thrown in '/var/www/project/src/Core/Router.php' on line 70
+[19-Jul-2023 10:47:30 UTC] Uncaught exception: 'Error' with message 'Call to undefined method Main\Core\Router::convertToStudlyCaps()' 
+Stack trace: #0 /var/www/project/src/Core/Router.php(57): Main\Core\Router->convertLowerFirst('show')
+#1 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/')
+#2 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#3 {main} 
+Thrown in '/var/www/project/src/Core/Router.php' on line 81
+[19-Jul-2023 11:43:16 UTC] Uncaught exception: 'Error' with message 'Call to undefined method Main\Core\Router::convertToStudlyCaps()' 
+Stack trace: #0 /var/www/project/src/Core/Router.php(57): Main\Core\Router->convertLowerFirst('show')
+#1 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/')
+#2 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#3 {main} 
+Thrown in '/var/www/project/src/Core/Router.php' on line 81
+[19-Jul-2023 11:43:16 UTC] Uncaught exception: 'Error' with message 'Call to undefined method Main\Core\Router::convertToStudlyCaps()' 
+Stack trace: #0 /var/www/project/src/Core/Router.php(57): Main\Core\Router->convertLowerFirst('returnJson')
+#1 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/get/returnJson')
+#2 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#3 {main} 
+Thrown in '/var/www/project/src/Core/Router.php' on line 81
+[19-Jul-2023 11:44:42 UTC] Uncaught exception: 'Error' with message 'Call to undefined method Main\Core\Router::convertToStudlyCaps()' 
+Stack trace: #0 /var/www/project/src/Core/Router.php(59): Main\Core\Router->convertLowerFirst('show')
+#1 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/')
+#2 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#3 {main} 
+Thrown in '/var/www/project/src/Core/Router.php' on line 83
+[19-Jul-2023 11:46:25 UTC] Uncaught exception: 'Error' with message 'Call to undefined method Main\Core\Router::convertToStudlyCaps()' 
+Stack trace: #0 /var/www/project/src/Core/Router.php(57): Main\Core\Router->convertLowerFirst('show')
+#1 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/')
+#2 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#3 {main} 
+Thrown in '/var/www/project/src/Core/Router.php' on line 81
+[19-Jul-2023 12:14:59 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '32' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(101): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 101
+[19-Jul-2023 13:22:35 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '12' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(102): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 102
+[19-Jul-2023 13:23:59 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '12' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(101): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 101
+[19-Jul-2023 13:25:26 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '23' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(101): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 101
+[19-Jul-2023 13:38:58 UTC] Uncaught exception: 'Error' with message 'Undefined constant "Main\App\Controllers\SVN_AUTH_PARAM_NON_INTERACTIVE"' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 27
+[19-Jul-2023 13:39:26 UTC] Uncaught exception: 'Error' with message 'Undefined constant "Main\App\Controllers\SVN_AUTH_PARAM_NON_INTERACTIVE"' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 27
+[19-Jul-2023 13:39:38 UTC] Uncaught exception: 'Error' with message 'Undefined constant "Main\App\Controllers\SVN_AUTH_PARAM_NON_INTERACTIVE"' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 27
+[19-Jul-2023 13:40:24 UTC] Uncaught exception: 'Error' with message 'Undefined constant "Main\App\Controllers\SVN_AUTH_PARAM_NON_INTERACTIVE"' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 27
+[19-Jul-2023 13:40:41 UTC] Uncaught exception: 'Error' with message 'Undefined constant "Main\App\Controllers\SVN_AUTH_PARAM_NON_INTERACTIVE"' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 27
+[19-Jul-2023 13:41:47 UTC] Uncaught exception: 'Error' with message 'Undefined constant "Main\App\Controllers\SVN_AUTH_PARAM_NON_INTERACTIVE"' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 27
+[19-Jul-2023 13:43:14 UTC] Uncaught exception: 'Error' with message 'Undefined constant "Main\App\Controllers\SVN_AUTH_PARAM_NON_INTERACTIVE"' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 27
+[19-Jul-2023 13:43:16 UTC] Uncaught exception: 'Error' with message 'Undefined constant "Main\App\Controllers\SVN_AUTH_PARAM_NON_INTERACTIVE"' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 27
+[19-Jul-2023 13:43:20 UTC] Uncaught exception: 'Error' with message 'Undefined constant "Main\App\Controllers\SVN_AUTH_PARAM_NON_INTERACTIVE"' 
+Stack trace: #0 [internal function]: Main\App\Controllers\Products->insertAction()
+#1 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#2 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#3 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#4 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#5 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 27
+[19-Jul-2023 13:46:30 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '22' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(109): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 109
+[19-Jul-2023 13:48:24 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '22' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(109): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 109
+[19-Jul-2023 13:50:00 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '22' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(109): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 109
+[19-Jul-2023 14:00:11 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '12' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(109): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 109
+[19-Jul-2023 14:01:07 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '12' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(101): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 101
+[19-Jul-2023 14:01:11 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1222' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(101): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 101
+[19-Jul-2023 14:13:38 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '12' for key 'info.UNIQ'' 
+Stack trace: #0 /var/www/project/src/App/Controllers/Products.php(101): PDOStatement->execute(Array)
+#1 [internal function]: Main\App\Controllers\Products->insertAction()
+#2 /var/www/project/src/Core/Controller.php(35): call_user_func_array(Array, Array)
+#3 /var/www/project/src/Core/Router.php(59): Main\Core\Controller->__call('insert', Array)
+#4 /var/www/project/public/bootstrap.php(27): Main\Core\Router->dispatch('/posts/insert')
+#5 /var/www/project/public/index.php(2): require_once('/var/www/projec...')
+#6 {main} 
+Thrown in '/var/www/project/src/App/Controllers/Products.php' on line 101

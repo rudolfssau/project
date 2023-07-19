@@ -3,6 +3,7 @@ import axios from 'axios'
 export default {
   data() {
     return {
+      test: '',
       require: true,
       sku: '',
       name: '',
@@ -45,6 +46,16 @@ export default {
     };
   },
   methods: {
+    checkForNum: function () {
+      for(let field in this.$data.fields) {
+        this.$data.fields[field].check = false;
+        this.notNumeric = 0;
+      }
+      if (isNaN(Number(this.$data.fields[this.select].input)) || isNaN(Number(this.$data.fields[this.select].input_second)) || isNaN(Number(this.$data.fields[this.select].input_third))) {
+        this.$data.fields[this.select].check = true;
+        this.notNumeric = 1;
+      }
+    },
     dropdown: function () {
       for(let field in this.$data.fields) {
         this.$data.fields[field].show = 'none';
@@ -52,12 +63,18 @@ export default {
       this.$data.fields[this.select].show = 'block';
     },
     submitForm: function (e) {
-      axios.post('/posts/insert', document.forms.product_form).then((res) => {
-        console.log(res);
-        window.location = '/'
-      }).catch((err) => {
-        alert(err.response.data.message);
-      });
+      if (isNaN(Number(this.price)) || this.notNumeric>0) {
+        alert("Please, provide the data of indicated type");
+        e.preventDefault();
+      }
+      else {
+        axios.post('/posts/insert', document.forms.product_form).then((res) => {
+          console.log(res);
+          window.location = '/'
+        }).catch((err) => {
+          alert(err.response.data.message);
+        });
+      }
     }
   }
 };
@@ -74,9 +91,9 @@ export default {
     </ul>
   </header>
   <form name="product_form" id="form" action="/posts/insert" method="post">
-    <div><p>SKU</p><input id="sku" type="text" name="sku" v-model="sku" v-on:input="errorCounter"></div>
-    <div><p>Name</p><input id="name" type="text" name="name" v-model="name"></div>
-    <div><p>Price ($)</p><input id="product_price" type="text" name="price" v-model="price"></div>
+    <div><span>SKU</span><input id="sku" type="text" name="sku" v-model="sku" v-on:input="errorCounter"></div>
+    <div><span>Name</span><input id="name" type="text" name="name" v-model="name"></div>
+    <div><span>Price ($)</span><input id="product_price" type="text" name="price" v-model="price"></div>
     <section>
       <label for="type-switcher" id="type-switcher">Type Switcher</label>
       <select name="switcher" id="productType" v-model="select" v-on:change="dropdown(select)">
@@ -89,19 +106,19 @@ export default {
     <section>
       <div id="dvd" class="options" v-bind:style="{display: this.fields.dvd.show}">
         <div id="dvd_input_field">
-          <p>Size (MB)</p>
+          <span>Size (MB)</span>
           <input id="dvd_input" type="text" name="sizemb" v-model="fields.dvd.input" v-on:input="checkForNum">
         </div>
         <h3>Please provide disc space in MB.</h3>
       </div>
       <div id="furniture" class="options" v-bind:style="{display: this.fields.furniture.show}">
-        <div id="furniture_input_field_0"><p>Height (CM)</p><input type="text" id="furniture_height" name="heightcm" v-model="fields.furniture.input" v-on:input="checkForNum"></div>
-        <div id="furniture_input_field_1"><p>Width (CM)</p><input type="text" id="furniture_width" name="widthcm" v-model="fields.furniture.input_second" v-on:input="checkForNum"></div>
-        <div id="furniture_input_field_2"><p>Length (CM)</p><input type="text" id="furniture_length" name="lengthcm" v-model="fields.furniture.input_third" v-on:input="checkForNum"></div>
+        <div id="furniture_input_field_0"><span>Height (CM)</span><input type="text" id="furniture_height" name="heightcm" v-model="fields.furniture.input" v-on:input="checkForNum"></div>
+        <div id="furniture_input_field_1"><span>Width (CM)</span><input type="text" id="furniture_width" name="widthcm" v-model="fields.furniture.input_second" v-on:input="checkForNum"></div>
+        <div id="furniture_input_field_2"><span>Length (CM)</span><input type="text" id="furniture_length" name="lengthcm" v-model="fields.furniture.input_third" v-on:input="checkForNum"></div>
         <h3>Please provide the height, width and length of the furniture piece in centimeters.</h3>
       </div>
       <div id="book" class="options" v-bind:style="{display: this.fields.book.show}">
-        <div id="book_input_field"><p>Weight (KG)</p><input type="text" id="book_weight" name="weightkg" v-model="fields.book.input" v-on:input="checkForNum"></div>
+        <div id="book_input_field"><span>Weight (KG)</span><input type="text" id="book_weight" name="weightkg" v-model="fields.book.input" v-on:input="checkForNum"></div>
         <h3>Please provide the weight of the book in KG.</h3>
       </div>
     </section>

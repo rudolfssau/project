@@ -78,6 +78,6 @@ class Router
     //Takes the resulting word from convertUpper() and changes the first letter to be lower case.
     public function convertLowerFirst(string $string): string
     {
-        return lcfirst($this->convertToStudlyCaps($string));
+        return lcfirst($this->convertUpper($string));
     }
 }
