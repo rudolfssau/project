@@ -1,13 +1,23 @@
-/*Styling reset for whole site*/
+/* Variables */
+$primary-color: green;
+$secondary-color: red;
+$text-color: lightgrey;
+$input-border: 1px solid $text-color;
+$input-font-size: 30px;
+$input-height: 40px;
+$input-margin-left: 65px;
+$input-padding: 10px;
+$header-padding: 20px;
+$footer-padding: 20px;
+
+/* Styling reset for whole site */
 * {
-  border: 0px;
-  margin: 0px;
-  padding: 0px;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
-/**/
-/*Whole body styling*/
-/**/
+/* Whole body styling */
 html, body {
   height: 100%;
 }
@@ -20,31 +30,32 @@ body {
   margin-right: auto;
 }
 
-/**/
-/*Styling for header*/
-/**/
+/* Styling for header */
 header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid lightgrey;
+  border-bottom: 2px solid $text-color;
 }
 
 header > h1 {
-  padding: 20px;
+  padding: $header-padding;
 }
 
-/*Styling for header buttons "ADD", "MASS DELETE"*/
+/* Styling for header buttons "ADD", "MASS DELETE" */
 .add-delete-button {
   display: flex;
   list-style: none;
 }
 
-#add-product-btn {
+#add-product-btn, #delete-product-btn {
   border-radius: 5px;
   color: white;
   padding: 10px;
-  background-color: green;
   cursor: pointer;
+}
+
+#add-product-btn {
+  background-color: $primary-color;
 }
 
 .add-product-button-wrapper {
@@ -52,79 +63,73 @@ header > h1 {
 }
 
 #delete-product-btn {
-  border-radius: 5px;
-  color: white;
-  padding: 10px;
-  background-color: red;
-  cursor: pointer;
+  background-color: $secondary-color;
 }
 
 .delete-product-button-wrapper {
   padding: 20px 20px 20px 0px;
 }
 
-/**/
-/*Content styling*/
-/**/
+/* Content styling */
 .content {
   flex: 1 0 auto;
 }
 
-/*Input form styling*/
+/* Input form styling */
+div > input {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 #product_form {
   margin-top: 50px;
 
   > div {
     white-space: nowrap;
-    padding: 10px 0;
+    padding: $input-padding 0;
     display: flex;
     align-items: center;
     font-size: 19px;
 
     input {
-      font-size: 30px;
-      height: 40px;
-      border: 1px solid lightgrey;
+      font-size: $input-font-size;
+      height: $input-height;
+      border: $input-border;
     }
   }
 
   .options {
     display: none;
   }
-
 }
 
-
 #product_form > div:nth-child(1) > input {
-  margin-left: 60px;
+  margin-left: $input-margin-left;
 }
 
 #product_form > div:nth-child(2) > input {
-  margin-left: 53px;
+  margin-left: $input-margin-left;
 }
 
 #product_form > div:nth-child(3) > input {
-  margin-left: 32.4px;
+  margin-left: calc($input-margin-left / 2);
 }
 
-/*Type switcher styling*/
+/* Type switcher styling */
 #type-switcher {
   font-size: 19px;
 }
 
 #productType {
   margin-left: 20px;
-  border: 1px solid lightgrey;
-  font-size: 30px;
-  height: 40px;
+  border: $input-border;
+  font-size: $input-font-size;
+  height: $input-height;
 }
 
-/*Type styling*/
+/* Type styling */
 
-div>input {
-  width: 100%;
-}
-#dvd_input_field {
+#dvd_input_field, #furniture_input_field_0, #furniture_input_field_1, #furniture_input_field_2, #book_input_field {
   display: flex;
   align-items: center;
   font-size: 19px;
@@ -132,37 +137,162 @@ div>input {
   padding-bottom: 20px;
 }
 
-#dvd_input_field > input {
-  font-size: 30px;
-  width: 90px;
-  border: 1px solid lightgrey;
-  margin-left: 65px;
-}
-
-#furniture_input_field_0, #furniture_input_field_1, #furniture_input_field_2 {
-  display: flex;
-  align-items: center;
-  font-size: 19px;
-  padding: 29px 0px 0px;
-}
-
-#furniture_input_field_0 > input, #furniture_input_field_1 > input, #furniture_input_field_2 > input {
-  font-size: 30px;
-  height: 40px;
-  border: 1px solid lightgrey;
-  margin-left: 65px;
+#dvd_input_field > input, #furniture_input_field_0 > input, #furniture_input_field_1 > input, #furniture_input_field_2 > input, #book_input_field > input {
+  font-size: $input-font-size;
+  border: $input-border;
+  margin-left: $input-margin-left;
 }
 
 #furniture_input_field_1 > input {
-  margin-left: 70px;
+  margin-left: $input-margin-left + 5;
 }
 
 #furniture_input_field_2 > input {
   margin-bottom: 20px;
 }
 
+/* Styling for footer */
+footer {
+  flex-shrink: 0;
+  padding: $footer-padding;
+  border-top: 2px solid $text-color;
+  text-align: center;
+}
 
-#book_input_field {
+footer > h3 {
+  font-weight: lighter;
+}/* Variables */
+$primary-color: green;
+$secondary-color: red;
+$text-color: lightgrey;
+$input-border: 1px solid $text-color;
+$input-font-size: 30px;
+$input-height: 40px;
+$input-margin-left: 65px;
+$input-padding: 10px;
+$header-padding: 20px;
+$footer-padding: 20px;
+
+/* Styling reset for whole site */
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Whole body styling */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling for header */
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid $text-color;
+}
+
+header > h1 {
+  padding: $header-padding;
+}
+
+/* Styling for header buttons "ADD", "MASS DELETE" */
+.add-delete-button {
+  display: flex;
+  list-style: none;
+}
+
+#add-product-btn, #delete-product-btn {
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#add-product-btn {
+  background-color: $primary-color;
+}
+
+.add-product-button-wrapper {
+  padding: 20px 5px 20px 20px;
+}
+
+#delete-product-btn {
+  background-color: $secondary-color;
+}
+
+.delete-product-button-wrapper {
+  padding: 20px 20px 20px 0px;
+}
+
+/* Content styling */
+.content {
+  flex: 1 0 auto;
+}
+
+/* Input form styling */
+div > input {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#product_form {
+  margin-top: 50px;
+
+  > div {
+    white-space: nowrap;
+    padding: $input-padding 0;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+
+    input {
+      font-size: $input-font-size;
+      height: $input-height;
+      border: $input-border;
+    }
+  }
+
+  .options {
+    display: none;
+  }
+}
+
+#product_form > div:nth-child(1) > input {
+  margin-left: $input-margin-left;
+}
+
+#product_form > div:nth-child(2) > input {
+  margin-left: $input-margin-left;
+}
+
+#product_form > div:nth-child(3) > input {
+  margin-left: calc($input-margin-left / 2);
+}
+
+/* Type switcher styling */
+#type-switcher {
+  font-size: 19px;
+}
+
+#productType {
+  margin-left: 20px;
+  border: $input-border;
+  font-size: $input-font-size;
+  height: $input-height;
+}
+
+/* Type styling */
+
+#dvd_input_field, #furniture_input_field_0, #furniture_input_field_1, #furniture_input_field_2, #book_input_field {
   display: flex;
   align-items: center;
   font-size: 19px;
@@ -170,27 +300,28 @@ div>input {
   padding-bottom: 20px;
 }
 
-#book_input_field > input {
-  font-size: 30px;
-  width: 90px;
-  border: 1px solid lightgrey;
-  margin-left: 65px;
+#dvd_input_field > input, #furniture_input_field_0 > input, #furniture_input_field_1 > input, #furniture_input_field_2 > input, #book_input_field > input {
+  font-size: $input-font-size;
+  border: $input-border;
+  margin-left: $input-margin-left;
 }
 
+#furniture_input_field_1 > input {
+  margin-left: $input-margin-left + 5;
+}
 
-/*Styling for footer*/
-/**/
+#furniture_input_field_2 > input {
+  margin-bottom: 20px;
+}
+
+/* Styling for footer */
 footer {
   flex-shrink: 0;
-  padding: 20px;
-  border-top: 2px solid lightgrey;
+  padding: $footer-padding;
+  border-top: 2px solid $text-color;
   text-align: center;
 }
 
 footer > h3 {
   font-weight: lighter;
 }
-
-/*# sourceMappingURL=product-add.css.map */
-
-/*# sourceMappingURL=product-add.scss.map */

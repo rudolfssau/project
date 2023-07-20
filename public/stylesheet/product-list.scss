@@ -1,17 +1,30 @@
+/* Variables */
 $zero: 0px;
+$primary-color: green;
+$secondary-color: red;
+$text-color: lightgrey;
+$header-padding: 20px;
+$button-padding: 10px;
+$button-radius: 5px;
+$button-cursor: pointer;
+$content-height: 85vh;
+$table-width: 100vh;
+$table-padding: 3px;
+$table-border: 1px solid black;
+$footer-padding: 20px;
 
-/*Styling reset for whole site*/
+/* Styling reset for whole site */
 * {
   border: $zero;
   margin: $zero;
   padding: $zero;
 }
 
-/*Whole body styling*/
-
+/* Whole body styling */
 html, body {
   height: 100%;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -20,80 +33,87 @@ body {
   margin-right: auto;
 }
 
-/*Styling for header*/
-
+/* Styling for header */
 header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid lightgrey;
+  border-bottom: 2px solid $text-color;
 }
+
 header > h1 {
-  padding: 20px;
+  padding: $header-padding;
 }
 
-/*Styling for header buttons "ADD", "MASS DELETE"*/
-
+/* Styling for header buttons "ADD", "MASS DELETE" */
 .add-delete-button {
   display: flex;
   list-style: none;
 }
-#add-product-btn {
-  border-radius: 5px;
+
+#add-product-btn, #delete-product-btn {
+  border-radius: $button-radius;
   color: white;
-  padding: 10px;
-  background-color: green;
-  cursor: pointer;
+  padding: $button-padding;
+  cursor: $button-cursor;
 }
+
+#add-product-btn {
+  background-color: $primary-color;
+}
+
 .add-product-button-wrapper {
   padding: 20px 5px 20px 20px;
 }
+
 #delete-product-btn {
-  border-radius: 5px;
-  color: white;
-  padding: 10px;
-  background-color: red;
-  cursor: pointer;
+  background-color: $secondary-color;
 }
+
 .delete-product-button-wrapper {
   padding: 20px 20px 20px 0px;
 }
 
-/*Content styling*/
-
+/* Content styling */
 .content {
   flex: 1 0 auto;
-  height: 85vh;
+  height: $content-height;
 }
-/*Styling for table*/
+
+/* Styling for table */
 table {
   margin: auto;
-  width: 100vh;
+  width: $table-width;
   table-layout: fixed;
   border-collapse: collapse;
 }
+
 td {
   width: 33.33%;
 }
+
 #table-data {
-  padding: 3px;
+  padding: $table-padding;
   display: flex;
   width: 100%;
   justify-content: center;
 }
+
 #table-data:last-child {
   padding-bottom: 40px;
 }
+
 #table-row {
   margin: 10px;
-  border: 1px solid black;
+  border: $table-border;
   display: flex;
-  width: 20%;
   flex-flow: row wrap;
   align-items: center;
 }
+
 #table-check {
   padding: 10px;
 }
+
 table {
   display: flex;
   margin-left: 6.5%;
@@ -102,38 +122,20 @@ table {
   height: auto;
 }
 
-/*Styling for footer*/
-
+/* Styling for footer */
 footer {
   flex-shrink: 0;
-  padding: 20px;
-  border-top: 2px solid lightgrey;
+  padding: $footer-padding;
+  border-top: 2px solid $text-color;
   text-align: center;
 }
+
 footer > h3 {
   font-weight: lighter;
 }
 
-
-
-.grid-container {
+/* Grid container */
+#grid_container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 10px;
-  border: 1px solid #ccc;
-  padding: 10px;
-}
-
-.grid-header {
-  font-weight: bold;
-}
-
-.grid-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-  align-items: center;
-  border-top: 1px solid #ccc;
-  padding: 10px 0;
+  grid-template-columns: auto auto auto auto;
 }

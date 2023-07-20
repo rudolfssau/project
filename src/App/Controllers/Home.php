@@ -12,10 +12,15 @@ class Home extends Controller
     /**
      * @throws Exception
      */
+    //showAction() is responsible for rendering the Home/index.php file with the help of the
+    //View class located in src/Core.
     public function showAction(): void
     {
         View::render('Home/index.php');
     }
+    //deleteAction() is responsible for the removal of select items from the MySQL database.
+    //It gets the selected (checkbox checked) "id" values from the json file.
+    //Finally, it deletes the specific record in the databased based on the selected item's "id".
     public function deleteAction(): void
     {
         $request_body = file_get_contents('php://input');

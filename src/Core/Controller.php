@@ -17,6 +17,8 @@ abstract class Controller
     /**
      * @param array $router_params
      */
+    //The __constructor is responsible for passing route parameters to other classes that extend
+    //the "Controller" class.
     public function __construct(array $router_params)
     {
         $this->router_params = $router_params;
@@ -28,6 +30,9 @@ abstract class Controller
      * @return void
      * @throws Exception
      */
+    //The __call function has been implemented as an extra security layer. For example, if the
+    // user calls "/get/returnJson" it will add an "Action" to the end of the "returnJson", converting it to
+    //"/get/returnJsonAction". This helps to prevent unwanted calls.
     public function __call(string $name, array $arguments)
     {
         $method = $name . "Action";

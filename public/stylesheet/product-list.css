@@ -1,11 +1,12 @@
-/*Styling reset for whole site*/
+/* Variables */
+/* Styling reset for whole site */
 * {
   border: 0px;
   margin: 0px;
   padding: 0px;
 }
 
-/*Whole body styling*/
+/* Whole body styling */
 html, body {
   height: 100%;
 }
@@ -18,7 +19,7 @@ body {
   margin-right: auto;
 }
 
-/*Styling for header*/
+/* Styling for header */
 header {
   display: flex;
   justify-content: space-between;
@@ -29,18 +30,21 @@ header > h1 {
   padding: 20px;
 }
 
-/*Styling for header buttons "ADD", "MASS DELETE"*/
+/* Styling for header buttons "ADD", "MASS DELETE" */
 .add-delete-button {
   display: flex;
   list-style: none;
 }
 
-#add-product-btn {
+#add-product-btn, #delete-product-btn {
   border-radius: 5px;
   color: white;
   padding: 10px;
-  background-color: green;
   cursor: pointer;
+}
+
+#add-product-btn {
+  background-color: green;
 }
 
 .add-product-button-wrapper {
@@ -48,24 +52,20 @@ header > h1 {
 }
 
 #delete-product-btn {
-  border-radius: 5px;
-  color: white;
-  padding: 10px;
   background-color: red;
-  cursor: pointer;
 }
 
 .delete-product-button-wrapper {
   padding: 20px 20px 20px 0px;
 }
 
-/*Content styling*/
+/* Content styling */
 .content {
   flex: 1 0 auto;
   height: 85vh;
 }
 
-/*Styling for table*/
+/* Styling for table */
 table {
   margin: auto;
   width: 100vh;
@@ -92,7 +92,6 @@ td {
   margin: 10px;
   border: 1px solid black;
   display: flex;
-  width: 20%;
   flex-flow: row wrap;
   align-items: center;
 }
@@ -109,7 +108,7 @@ table {
   height: auto;
 }
 
-/*Styling for footer*/
+/* Styling for footer */
 footer {
   flex-shrink: 0;
   padding: 20px;
@@ -121,26 +120,10 @@ footer > h3 {
   font-weight: lighter;
 }
 
-.grid-container {
+/* Grid container */
+#grid_container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 10px;
-  border: 1px solid #ccc;
-  padding: 10px;
-}
-
-.grid-header {
-  font-weight: bold;
-}
-
-.grid-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-  align-items: center;
-  border-top: 1px solid #ccc;
-  padding: 10px 0;
+  grid-template-columns: auto auto auto auto;
 }
 
 /*# sourceMappingURL=product-list.css.map */

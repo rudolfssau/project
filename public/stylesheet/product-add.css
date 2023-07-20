@@ -1,13 +1,12 @@
-/*Styling reset for whole site*/
+/* Variables */
+/* Styling reset for whole site */
 * {
-  border: 0px;
-  margin: 0px;
-  padding: 0px;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
-/**/
-/*Whole body styling*/
-/**/
+/* Whole body styling */
 html, body {
   height: 100%;
 }
@@ -20,9 +19,7 @@ body {
   margin-right: auto;
 }
 
-/**/
-/*Styling for header*/
-/**/
+/* Styling for header */
 header {
   display: flex;
   justify-content: space-between;
@@ -33,18 +30,21 @@ header > h1 {
   padding: 20px;
 }
 
-/*Styling for header buttons "ADD", "MASS DELETE"*/
+/* Styling for header buttons "ADD", "MASS DELETE" */
 .add-delete-button {
   display: flex;
   list-style: none;
 }
 
-#add-product-btn {
+#add-product-btn, #delete-product-btn {
   border-radius: 5px;
   color: white;
   padding: 10px;
-  background-color: green;
   cursor: pointer;
+}
+
+#add-product-btn {
+  background-color: green;
 }
 
 .add-product-button-wrapper {
@@ -52,25 +52,24 @@ header > h1 {
 }
 
 #delete-product-btn {
-  border-radius: 5px;
-  color: white;
-  padding: 10px;
   background-color: red;
-  cursor: pointer;
 }
 
 .delete-product-button-wrapper {
   padding: 20px 20px 20px 0px;
 }
 
-/**/
-/*Content styling*/
-/**/
+/* Content styling */
 .content {
   flex: 1 0 auto;
 }
 
-/*Input form styling*/
+/* Input form styling */
+div > input {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 #product_form {
   margin-top: 50px;
 }
@@ -91,18 +90,18 @@ header > h1 {
 }
 
 #product_form > div:nth-child(1) > input {
-  margin-left: 60px;
+  margin-left: 65px;
 }
 
 #product_form > div:nth-child(2) > input {
-  margin-left: 53px;
+  margin-left: 65px;
 }
 
 #product_form > div:nth-child(3) > input {
-  margin-left: 32.4px;
+  margin-left: 32.5px;
 }
 
-/*Type switcher styling*/
+/* Type switcher styling */
 #type-switcher {
   font-size: 19px;
 }
@@ -114,12 +113,8 @@ header > h1 {
   height: 40px;
 }
 
-/*Type styling*/
-div > input {
-  width: 100%;
-}
-
-#dvd_input_field {
+/* Type styling */
+#dvd_input_field, #furniture_input_field_0, #furniture_input_field_1, #furniture_input_field_2, #book_input_field {
   display: flex;
   align-items: center;
   font-size: 19px;
@@ -127,23 +122,8 @@ div > input {
   padding-bottom: 20px;
 }
 
-#dvd_input_field > input {
+#dvd_input_field > input, #furniture_input_field_0 > input, #furniture_input_field_1 > input, #furniture_input_field_2 > input, #book_input_field > input {
   font-size: 30px;
-  width: 90px;
-  border: 1px solid lightgrey;
-  margin-left: 65px;
-}
-
-#furniture_input_field_0, #furniture_input_field_1, #furniture_input_field_2 {
-  display: flex;
-  align-items: center;
-  font-size: 19px;
-  padding: 29px 0px 0px;
-}
-
-#furniture_input_field_0 > input, #furniture_input_field_1 > input, #furniture_input_field_2 > input {
-  font-size: 30px;
-  height: 40px;
   border: 1px solid lightgrey;
   margin-left: 65px;
 }
@@ -156,7 +136,133 @@ div > input {
   margin-bottom: 20px;
 }
 
-#book_input_field {
+/* Styling for footer */
+footer {
+  flex-shrink: 0;
+  padding: 20px;
+  border-top: 2px solid lightgrey;
+  text-align: center;
+}
+
+footer > h3 {
+  font-weight: lighter;
+} /* Variables */
+/* Styling reset for whole site */
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Whole body styling */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling for header */
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid lightgrey;
+}
+
+header > h1 {
+  padding: 20px;
+}
+
+/* Styling for header buttons "ADD", "MASS DELETE" */
+.add-delete-button {
+  display: flex;
+  list-style: none;
+}
+
+#add-product-btn, #delete-product-btn {
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#add-product-btn {
+  background-color: green;
+}
+
+.add-product-button-wrapper {
+  padding: 20px 5px 20px 20px;
+}
+
+#delete-product-btn {
+  background-color: red;
+}
+
+.delete-product-button-wrapper {
+  padding: 20px 20px 20px 0px;
+}
+
+/* Content styling */
+.content {
+  flex: 1 0 auto;
+}
+
+/* Input form styling */
+div > input {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#product_form {
+  margin-top: 50px;
+}
+#product_form > div {
+  white-space: nowrap;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+}
+#product_form > div input {
+  font-size: 30px;
+  height: 40px;
+  border: 1px solid lightgrey;
+}
+#product_form .options {
+  display: none;
+}
+
+#product_form > div:nth-child(1) > input {
+  margin-left: 65px;
+}
+
+#product_form > div:nth-child(2) > input {
+  margin-left: 65px;
+}
+
+#product_form > div:nth-child(3) > input {
+  margin-left: 32.5px;
+}
+
+/* Type switcher styling */
+#type-switcher {
+  font-size: 19px;
+}
+
+#productType {
+  margin-left: 20px;
+  border: 1px solid lightgrey;
+  font-size: 30px;
+  height: 40px;
+}
+
+/* Type styling */
+#dvd_input_field, #furniture_input_field_0, #furniture_input_field_1, #furniture_input_field_2, #book_input_field {
   display: flex;
   align-items: center;
   font-size: 19px;
@@ -164,15 +270,21 @@ div > input {
   padding-bottom: 20px;
 }
 
-#book_input_field > input {
+#dvd_input_field > input, #furniture_input_field_0 > input, #furniture_input_field_1 > input, #furniture_input_field_2 > input, #book_input_field > input {
   font-size: 30px;
-  width: 90px;
   border: 1px solid lightgrey;
   margin-left: 65px;
 }
 
-/*Styling for footer*/
-/**/
+#furniture_input_field_1 > input {
+  margin-left: 70px;
+}
+
+#furniture_input_field_2 > input {
+  margin-bottom: 20px;
+}
+
+/* Styling for footer */
 footer {
   flex-shrink: 0;
   padding: 20px;
@@ -183,8 +295,5 @@ footer {
 footer > h3 {
   font-weight: lighter;
 }
-
-
-
 
 /*# sourceMappingURL=product-add.css.map */

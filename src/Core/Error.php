@@ -4,6 +4,8 @@ namespace Main\Core;
 
 class Error
 {
+    //When an exception in thrown, it gets logged to the log folder.
+    //The exception message gets specified messages, stack traces, etc.
     public static function exceptionHandler($exception): void
     {
         $log = dirname(__DIR__) . '/logs/' . date('Y-m-d') . '.txt';

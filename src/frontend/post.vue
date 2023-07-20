@@ -10,8 +10,6 @@ export default {
       price: '',
       select: 'none',
       isDuplicate: false,
-      errorCount: 0,
-      notNumeric: 0,
       skuData: [],
       fields: {
         none: {
@@ -46,16 +44,6 @@ export default {
     };
   },
   methods: {
-    checkForNum: function () {
-      for(let field in this.$data.fields) {
-        this.$data.fields[field].check = false;
-        this.notNumeric = 0;
-      }
-      if (isNaN(Number(this.$data.fields[this.select].input)) || isNaN(Number(this.$data.fields[this.select].input_second)) || isNaN(Number(this.$data.fields[this.select].input_third))) {
-        this.$data.fields[this.select].check = true;
-        this.notNumeric = 1;
-      }
-    },
     dropdown: function () {
       for(let field in this.$data.fields) {
         this.$data.fields[field].show = 'none';
@@ -63,18 +51,12 @@ export default {
       this.$data.fields[this.select].show = 'block';
     },
     submitForm: function (e) {
-      if (isNaN(Number(this.price)) || this.notNumeric>0) {
-        alert("Please, provide the data of indicated type");
-        e.preventDefault();
-      }
-      else {
-        axios.post('/posts/insert', document.forms.product_form).then((res) => {
-          console.log(res);
-          window.location = '/'
-        }).catch((err) => {
-          alert(err.response.data.message);
-        });
-      }
+      axios.post('/posts/insert', document.forms.product_form).then((res) => {
+        console.log(res);
+        window.location = '/'
+      }).catch((err) => {
+        alert(err.response.data.message);
+      });
     }
   }
 };

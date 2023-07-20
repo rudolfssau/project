@@ -45,22 +45,22 @@ export default {
     </ul>
   </header>
   <section class="content">
-    <table>
-      <tr id="table-row" v-for="user in users" :key="user.id">
-        <td id="table-check"><input id="delete" class="delete-checkbox" :value="user.id" :name="user.id" v-model="itemsToDelete" type="checkbox"></td>
-        <td v-if="user.switcher === 'dvd'" id="table-data">{{ user.sku }}</td>
-        <td v-if="user.switcher === 'dvd'" id="table-data">{{ user.name }}</td>
-        <td v-if="user.switcher === 'dvd'" id="table-data">{{ user.price }} $</td>
-        <td v-if="user.switcher === 'dvd'" id="table-data">Size: {{ user.sizemb }} MB</td>
-        <td v-if="user.switcher === 'furniture'" id="table-data">{{ user.sku }}</td>
-        <td v-if="user.switcher === 'furniture'" id="table-data">{{ user.name }}</td>
-        <td v-if="user.switcher === 'furniture'" id="table-data">{{ user.price }} $</td>
-        <td v-if="user.switcher === 'furniture'" id="table-data">Dimensions: {{ user.heightcm }}x{{ user.widthcm }}x{{ user.lengthcm }}</td>
-        <td v-if="user.switcher === 'book'" id="table-data">{{ user.sku }}</td>
-        <td v-if="user.switcher === 'book'" id="table-data">{{ user.name }}</td>
-        <td v-if="user.switcher === 'book'" id="table-data">{{ user.price }} $</td>
-        <td v-if="user.switcher === 'book'" id="table-data">Weight: {{ user.weightkg }} KG</td>
-      </tr>
-    </table>
+    <div id="grid_container">
+      <div id="table-row" v-for="user in users" :key="user.id">
+        <div id="table-check"><input id="delete" class="delete-checkbox" :value="user.id" :name="user.id" v-model="itemsToDelete" type="checkbox"></div>
+        <div v-if="user.switcher === 'dvd'" id="table-data">{{ user.sku }}</div>
+        <div v-if="user.switcher === 'dvd'" id="table-data">{{ user.name }}</div>
+        <div v-if="user.switcher === 'dvd'" id="table-data">{{ user.price }} $</div>
+        <div v-if="user.switcher === 'dvd'" id="table-data">Size: {{ user.sizemb }} MB</div>
+        <div v-if="user.switcher === 'furniture'" id="table-data">{{ user.sku }}</div>
+        <div v-if="user.switcher === 'furniture'" id="table-data">{{ user.name }}</div>
+        <div v-if="user.switcher === 'furniture'" id="table-data">{{ user.price }} $</div>
+        <div v-if="user.switcher === 'furniture'" id="table-data">Dimensions: {{ user.heightcm }}x{{ user.widthcm }}x{{ user.lengthcm }}</div>
+        <div v-if="user.switcher === 'book'" id="table-data">{{ user.sku }}</div>
+        <div v-if="user.switcher === 'book'" id="table-data">{{ user.name }}</div>
+        <div v-if="user.switcher === 'book'" id="table-data">{{ user.price }} $</div>
+        <div v-if="user.switcher === 'book'" id="table-data">Weight: {{ user.weightkg }} KG</div>
+      </div>
+    </div>
   </section>
 </template>
